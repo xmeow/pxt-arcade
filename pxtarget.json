@@ -50,6 +50,7 @@
         "libs/core---samd",
         "libs/core---stm32",
         "libs/core---nrf52",
+        "libs/core---rp2040",
         "libs/core---linux",
         "libs/core---vm",
         "libs/serial",
@@ -65,6 +66,7 @@
         "libs/hw---n3",
         "libs/hw---n4",
         "libs/hw---rpi",
+        "libs/hw---rp2040",
         "libs/hw---vm",
         "libs/feather",
         "libs/sevenseg",
@@ -349,6 +351,25 @@
                         }
                     }
                 }
+            }
+        },
+        "rp2040": {
+            "compile": {
+                "hasHex": true,
+                "openocdScript": "source [find interface/picoprobe.cfg]; source [find target/rp2040.cfg]",
+                "flashEnd": 524288,
+                "ramSize": 270336,
+                "uf2Family": "0xe48bff56"
+            },
+            "compileService": {
+                "codalTarget": {
+                    "name": "codal-pi-pico",
+                    "url": "https://github.com/lancaster-university/codal-pi-pico",
+                    "branch": "master",
+                    "type": "git"
+                },
+                "codalBinary": "PI-PICO",
+                "serviceId": "codal2pico"
             }
         },
         "rpi": {
