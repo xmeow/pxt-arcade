@@ -8,11 +8,15 @@
   "dependencies": {
     "core---rp2040": "file:../core---rp2040",
     "screen---st7735": "file:../screen---st7735",
+    "mixer---rp2040": "file:../mixer---rp2040",
     "game": "file:../game"
   },
   "public": true,
   "skipLocalization": true,
   "features": [],
+  "dalDTS": {
+    "corePackage": "../core---rp2040"
+  },
   "screenSize": {
     "width": 160,
     "height": 120

@@ -1101,7 +1101,7 @@ declare const enum DAL {
     CFG_PIN_JDPWR_FAULT = 1105,
     // /pxtapp/hf2dbg.h
     HF2DBG_H = 1,
-    // /pxtapp/mixer/melody.h
+    // /pxtapp/mixer---rp2040/melody.h
     OUTPUT_BITS = 10,
     SW_TRIANGLE = 1,
     SW_SAWTOOTH = 2,
