@@ -2,7 +2,6 @@
   "name": "hw---rp2040",
   "description": "RPI Pico and variants",
   "files": [
-    "main.ts",
     "config.ts"
   ],
   "compileServiceVariant": "rp2040",
