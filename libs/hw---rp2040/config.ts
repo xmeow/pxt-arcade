@@ -7,6 +7,9 @@ namespace config {
  export const PIN_DISPLAY_RST = DAL.P25
  export const PIN_DISPLAY_CS = DAL.P24
 
+ export const PIN_JACK_TX = DAL.P9
+ export const PIN_JACK_SND = DAL.P27
+
  export const DISPLAY_WIDTH = 160
  export const DISPLAY_HEIGHT = 128
 
