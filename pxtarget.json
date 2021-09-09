@@ -65,9 +65,7 @@
         "libs/hw---samd51",
         "libs/hw---n3",
         "libs/hw---n4",
-        "libs/hw---rpi",
         "libs/hw---rp2040",
-        "libs/hw---vm",
         "libs/feather",
         "libs/sevenseg",
         "libs/settings",
@@ -85,6 +83,7 @@
         "libs/mixer---samd",
         "libs/mixer---stm32",
         "libs/mixer---nrf52",
+        "libs/mixer---rp2040",
         "libs/mixer---none",
         "libs/mixer---linux",
         "libs/mixer---ext",
@@ -106,7 +105,6 @@
         "libs/radio-broadcast",
         "libs/d5prj",
         "libs/f4prj",
-        "libs/rpiprj",
         "libs/color-coded-tilemap",
         "libs/template"
     ],
@@ -370,37 +368,6 @@
                 },
                 "codalBinary": "PI-PICO",
                 "serviceId": "codal2pico"
-            }
-        },
-        "rpi": {
-            "compile": {
-                "hasHex": true,
-                "useELF": true,
-                "runtimeIsARM": true,
-                "flashCodeAlign": 256,
-                "webUSB": false,
-                "stackAlign": 2
-            },
-            "compileService": {
-                "buildEngine": "dockermake",
-                "dockerImage": "pext/rpi:alsa",
-                "serviceId": "rpi"
-            }
-        },
-        "vm": {
-            "compile": {
-                "hasHex": true,
-                "useELF": true,
-                "flashCodeAlign": 256,
-                "webUSB": false,
-                "nativeType": "vm",
-                "stackAlign": 2
-            },
-            "compileService": {
-                "buildEngine": "dockercross",
-                "dockerImage": "pext/crossbuild",
-                "serviceId": "crossbuild",
-                "skipCloudBuild": true
             }
         }
     },
