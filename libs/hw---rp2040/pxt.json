@@ -24,6 +24,12 @@
     "game": "file:../game"
   },
   "additionalFilePath": "../hw",
+  "yotta": {
+    "optionalConfig": {
+      "DEVICE_JACDAC_DEBUG": 1,
+      "PXT_GC_CHECKS": 1
+    }
+  },
   "public": true,
   "skipLocalization": true,
   "features": [],
