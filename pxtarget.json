@@ -367,7 +367,15 @@
                     "type": "git"
                 },
                 "codalBinary": "PI-PICO",
-                "serviceId": "codal2pico"
+                "serviceId": "codal2pico",
+                "dockerImage": "yottabuild:latest",
+                "yottaConfig": {
+                    "pxt": {
+                        "board": {
+                            "id": "BOARD_ID_RP2040"
+                        }
+                    }
+                }
             }
         }
     },
